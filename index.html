@@ -7,9 +7,23 @@ welcome to jj's site this is not ready yet this site is just for minecraft not a
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 <script type="text/javascript" src="/otherpages/test.js"></script>
   </head>
-   <meta charset="UTF-8">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-  <button class="btn" data-clipboard-text="play.jjmcsurvival.tk">copy server ip</button>
+   <button class="btn" data-clipboard-text="play.jjmcsurvival.tk">
+    Copy to ip clipboard
+   </button>
+ 
+  <script src="dist/clipboard.min.js"></script>
+ 
+ <script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
   </body>
+ </html>
   
