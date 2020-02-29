@@ -3,6 +3,27 @@
 <body>
 welcome to jj's site this is not ready yet this site is just for minecraft not anything else
  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+ <script>
+        $(document).ready(function(){
+
+            var clipboard = new Clipboard('.btn');
+            clipboard.on('success', function(e) {
+                console.log("Clipboard running");
+
+                
+                var selection = window.getSelection();
+                selection.removeAllRanges();
+            });
+            clipboard.on('error', function(e) {
+                console.log("Unable To Run Or Browser Cant Handle It!");
+            });
+
+            
+
+        });
+
+
+    </script>
  <button class="btn" data-clipboard-text="play.jjmcsurvival.tk">copy server ip</button>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
 <script type="text/javascript" src="/otherpages/test.js"></script>
