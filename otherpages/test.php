@@ -9,5 +9,7 @@
     </p>
     <p><textarea name="message" cols="5" rows="5"></textarea>&nbsp;</p>
     <input type="submit" id="submit" value="Submit" />
+  </form>
+  
     </body>
   </html>
