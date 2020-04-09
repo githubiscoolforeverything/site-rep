@@ -1,1 +1,0 @@
-var msg = document.getElementById("Msg"); var open = document.getElementById("Open");  var close = document.getElementById("Close"); btn.onclick = function() { modal.style.display = "none"; } window.onclick = function(event) { if (event.target == modal) { modal.display.style = "none"; } }
