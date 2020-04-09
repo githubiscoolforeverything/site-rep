@@ -1,1 +1,1 @@
-var msg = document.getElementById("Msg"); var open = document.getElementById("Open");  var close = document.getElementById("Close"); btn.onclick = function() { msg.style.display = "none"; } window.onclick = function(event) { if (event.target == msg) { msg.display.style = "none"; } }
+var msg = document.getElementById("Msg"); var open = document.getElementById("Open");  var close = document.getElementsByClassName("Close")[0]; btn.onclick = function() { msg.style.display = "none"; } window.onclick = function(event) { if (event.target == msg) { msg.display.style = "none"; } }
