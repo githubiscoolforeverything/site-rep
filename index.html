@@ -6,68 +6,30 @@
 
   <noscript><meta http-equiv="refresh" content="0; url=otherpages/noscript.html" /></noscript>
  
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
  
- <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
+ <script>
+   function enablemsg {   
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+   }
+  </script>
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.msg-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.Close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.Close:hover,
-.Close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
- </style>
- 
-
-
- <button class="btn" id="Open" data-clipboard-text="play.jjmcsurvival.tk">
+ <button class="btn" onclick="enablemsg()" data-clipboard-text="play.jjmcsurvival.tk">
     Copy Ip To Clipboard
    </button>
  
- <div id="Msg" class="modal">
-  
-  <div class="msg-content">
-   <span class="Close">&times;</span>
-   <p>Copied Ip!</p>
-  </div>
- </div>
+ 
  
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
  
  <script src="dist/clipboard.min.js"></script>
- <script src="dist/modal.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+ <div id="dialog" title="Done">
+  <p>Copied To Clipboard!</p>
+</div>
 
     </body>
  
