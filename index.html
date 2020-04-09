@@ -11,13 +11,22 @@
  
 
 
- <button class="btn" data-clipboard-text="play.jjmcsurvival.tk">
+ <button class="btn" id="Open" data-clipboard-text="play.jjmcsurvival.tk">
     Copy Ip To Clipboard
    </button>
+ 
+ <div id="Msg" class="modal">
+  
+  <div class="msg-content">
+   <span class="close">&times;</span>
+   <p>Copied Ip!</p>
+  </div>
+ </div>
  
       <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
  
  <script src="dist/clipboard.min.js"></script>
+ <script src="dist/modal.js"></script>
 
     </body>
  
@@ -30,7 +39,6 @@
 
     clipboard.on('success', function(e) {
         console.log(e);
-     alert("Copied Server Ip!")
     });
 
     clipboard.on('error', function(e) {
