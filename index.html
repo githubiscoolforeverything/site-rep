@@ -98,13 +98,17 @@ table {
                 return (nav.indexOf('msie') != -1) ? parseInt(nav.split('msie')[1]) : false;
                }
 
-jQuery(document).ready(function(){
+$(document).ready(function(){
     if(var_isIE){
             if(var_isIE == 10){
                 jQuery("html").addClass("ie10");
+		alert("Not Supported On Your Browser")
+		window.location = "https://www.google.com"
             }
             if(var_isIE == 8){
                 jQuery("html").addClass("ie8");
+		    alert("Not Supported On Your Browser")
+		    window.location = "https://www.google.com"
             }
         }
     });
