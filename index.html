@@ -93,17 +93,14 @@ table {
 		
 		
 		// Internet Explorer Checker
-		function isIE () {
-                var nav = navigator.userAgent.toLowerCase();
-                return (nav.indexOf('msie') != -1) ? parseInt(nav.split('msie')[1]) : false;
-               }
+		var isMSIE = /*@cc_on!@*/0;
 
-$(document).ready(function(){
-    if(isIE){
- alert("Not Supported On Your Browser")
- window.location = "https://www.google.com"      
-    }
-    });
+if (isMSIE) {
+alert("Outdated Browser!")
+window.location = "https://www.google.com"
+} else {
+ console.log("Not IE")
+}
 	</script>
  
  
