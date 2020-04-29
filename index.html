@@ -6,7 +6,7 @@
 <meta property="og:url" content="https://jjmcsurvival.tk" />
 <meta property="og:site_name" content="jjmcsurvival.tk" />
 <meta property="og:title" content="jjmcsurvival" />
-<link rel="icon" type="image/ico" href="/favicon.ico">
+<link rel="icon" href="/favicon.ico">
 <meta property="og:image" content="/favicon.ico" />
 <meta property="og:description" content="A Only Survival Mode Minecraft Server That is coming soon!" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -98,14 +98,10 @@ table {
 		
 		
 		// Internet Explorer Checker
-		var isMSIE = /*@cc_on!@*/0;
+		if (navigator.userAgent.search("MSIE") & gt; = 0) {
+                alert("Site Not Supported On your browser!")
+                }
 
-if (isMSIE) {
-alert("Outdated Browser!")
-window.location = "https://www.google.com"
-} else {
- console.log("Not IE")
-}
 	</script>
  
  
