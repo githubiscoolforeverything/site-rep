@@ -89,9 +89,11 @@ table {
                 window.location = 'https:'+window.location.href.substr(6);
                 }
 		
+		var isie = /*@cc_on!@*/false || !!document.documentMode
+		
 		
 		// Internet Explorer Checker
-		if /*@cc_on!@*/false || !!document.documentMode {
+		if isie {
 			alert("Internet Explorer Is Not Supported! Please Use Chrome or Microsoft Edge")
 			window.location = "https://www.google.com"
 		}
