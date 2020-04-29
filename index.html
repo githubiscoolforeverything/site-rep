@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>jjmcsurvival</title>
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jjmcsurvival.tk" />
 <meta property="og:site_name" content="jjmcsurvival.tk" />
@@ -87,6 +88,13 @@ table {
 		if (((window.location.href+'').toLowerCase()).indexOf('http:') == 0) {
                 window.location = 'https:'+window.location.href.substr(6);
                 }
+		
+		
+		// Internet Explorer Checker
+		if /*@cc_on!@*/false || !!document.documentMode {
+			alert("Internet Explorer Is Not Supported! Please Use Chrome or Microsoft Edge")
+			window.location = "https://www.google.com"
+		}
 	</script>
  
  
