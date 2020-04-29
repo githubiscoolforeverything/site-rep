@@ -99,14 +99,14 @@ table {
                }
 
 $(document).ready(function(){
-    if(var_isIE){
-            if(var_isIE == 10){
-                jQuery("html").addClass("ie10");
+    if(isIE){
+            if(isIE == 10){
+                $("html").addClass("ie10");
 		alert("Not Supported On Your Browser")
 		window.location = "https://www.google.com"
             }
-            if(var_isIE == 8){
-                jQuery("html").addClass("ie8");
+            if(isIE == 8){
+                $("html").addClass("ie8");
 		    alert("Not Supported On Your Browser")
 		    window.location = "https://www.google.com"
             }
