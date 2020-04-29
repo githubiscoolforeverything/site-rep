@@ -93,10 +93,21 @@ table {
 		
 		
 		// Internet Explorer Checker
-		if document.documentMode {
-			alert("Internet Explorer Is Not Supported! Please Use Chrome or Microsoft Edge")
-			window.location = "https://www.google.com"
-		}
+		function isIE () {
+                var nav = navigator.userAgent.toLowerCase();
+                return (nav.indexOf('msie') != -1) ? parseInt(nav.split('msie')[1]) : false;
+               }
+
+jQuery(document).ready(function(){
+    if(var_isIE){
+            if(var_isIE == 10){
+                jQuery("html").addClass("ie10");
+            }
+            if(var_isIE == 8){
+                jQuery("html").addClass("ie8");
+            }
+        }
+    });
 	</script>
  
  
