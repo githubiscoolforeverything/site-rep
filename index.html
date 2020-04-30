@@ -94,13 +94,14 @@ table {
                 window.location = 'https:'+window.location.href.substr(6);
                 }
 		
+		// Got Some Ideas From Mozilla
+		document.addEventListener('contextmenu', function(c) {
+                console.log("Lol")
+                c.preventDefault();
+                }, false);
 		
 		
 		
-		// Internet Explorer Checker
-		if (navigator.userAgent.search("MSIE")) {
-                alert("Site Not Supported On your browser!")
-                }
 
 	</script>
  
