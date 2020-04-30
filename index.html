@@ -22,7 +22,9 @@
  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
  
  <script>
+  var msg = document.getElementById("dialog");
   function enablemsg() {
+  msg.style.display = "block";
   $( function() {
     $( "#dialog" ).dialog();
   } );
@@ -100,8 +102,9 @@ table {
                 c.preventDefault();
                 }, false);
 		
-		
-		
+		var msg = document.getElementById("dialog")
+			
+	        msg.style.display = "none";
 
 	</script>
  
