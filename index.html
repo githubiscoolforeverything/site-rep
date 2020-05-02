@@ -105,6 +105,12 @@ table {
 		var msg = document.getElementById("dialog")
 			
 	        msg.style.display = "none";
+		
+		var isIE = /(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent); // cloudflare
+		
+		if isIE {
+		    alert("Browser Not Supported!")
+		}
 
 	</script>
  
