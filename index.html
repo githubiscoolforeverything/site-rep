@@ -105,6 +105,12 @@ table {
 		$(this).on('keypress', function(event) {
                 if (event.key == "c") {
                 enablemsg()
+	       var clips = "play.jjmcsurvival.tk";
+                 navigator.clipboard.writeText(clips).then(function() {
+                 console.log('clipinboard loaded!');
+                 }, function(err) {
+                 console.error('god pls no');
+                });
                 }
                 })
 		
