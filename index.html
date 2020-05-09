@@ -84,7 +84,7 @@ table {
  </style>
 
  <button class="btn" onclick="enablemsg()" data-clipboard-text="play.jjmcsurvival.tk">
-    Copy Ip To Clipboard
+    Copy Ip To Clipboard or press c
    </button>
  
  <div id="dialog" title="Done">
@@ -101,6 +101,12 @@ table {
                 console.log("Lol")
                 c.preventDefault();
                 }, false);
+		
+		$(this).on('keypress', function(event) {
+                if (event.key == "c") {
+                enablemsg()
+                }
+                })
 		
 		var msg = document.getElementById("dialog")
 			
