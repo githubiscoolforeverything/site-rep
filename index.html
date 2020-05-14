@@ -29,6 +29,7 @@
   var msg = document.getElementById("dialog");
   function enablemsg() {
   msg.style.display = "block";
+  document.getElementById("dialog").className = "modal fade animated zoomIn"; // changes to animated
   $( function() {
     $( "#dialog" ).dialog();
   } );
@@ -126,6 +127,10 @@ table {
 		
 		if  (/(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent)) {
 		    alert("Browser Not Supported!")
+		}
+		
+		if msg.style.display = "none"; {
+		 msg.className = "no animate";
 		}
 
 	</script>
