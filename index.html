@@ -28,8 +28,8 @@
  <script>
   var msg = document.getElementById("dialog");
   function enablemsg() {
+  msg.className = "modal fade animated zoomIn"; // changes to animated
   msg.style.display = "block";
-  document.getElementById("dialog").className = "modal fade animated zoomIn"; // changes to animated
   $( function() {
     $( "#dialog" ).dialog();
   } );
