@@ -101,6 +101,15 @@ table {
                 window.location = 'https:'+window.location.href.substr(6);
                 }
 		
+		var fetchsearch = window.location.search;
+
+                var searchparams = new URLSearchParams(queryString);
+
+                var language = urlParams.get("lang");
+		
+		
+		document.documentElement.lang = language
+		
 		// Got Some Ideas From Mozilla
 		document.addEventListener('contextmenu', function(c) {
                 console.log("Lol")
@@ -132,6 +141,8 @@ table {
 		if (msg.style.display = "none") {
 		 msg.className = "no animate";
 		}
+		
+		
 
 	</script>
  
