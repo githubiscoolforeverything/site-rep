@@ -89,7 +89,7 @@ table {
 }
  </style>
 
- <button class="btn" onclick="enablemsg()" data-clipboard-text="play.jjmcsurvival.tk">
+ <button class="btn" onclick="enablemsg()" id="msgbutton" data-clipboard-text="play.jjmcsurvival.tk">
     Copy Ip To Clipboard or press c
    </button>
  
@@ -129,21 +129,27 @@ table {
                 }
                 })
 		
-		var msg = document.getElementById("dialog")
+		var msg = document.getElementById("dialog");
 			
 	        msg.style.display = "none";
 		
 		var isIE = /(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent); // cloudflare
 		
 		if  (/(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent)) {
-		    alert("Browser Not Supported!")
+		    alert("Browser Not Supported!");
+		    document.location = "https://www.google.com";
 		}
 		
 		if (msg.style.display = "none") {
 		 msg.className = "no animate";
 		}
 		
-		
+		if document.documentElement.lang == "null" {
+		var buttonthing = document.getElementById("msgbutton");
+		$("welcometext").update("Your language is invalid pls choose a valid language :(")	// for ppl who dont kno languages lol
+		buttonthing.parentNode.removeChild(buttonthing);
+                return false;
+		}
 
 	</script>
  
@@ -177,7 +183,7 @@ table {
         console.log(e);
     });
     </script>
-welcome to jjmcsurvival this is not ready yet this site is just for minecraft not anything else
+<div> id="welcometext"> welcome to jjmcsurvival this is not ready yet this site is just for minecraft not anything else </div>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
   </head>
   </html>
